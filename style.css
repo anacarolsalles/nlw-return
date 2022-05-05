@@ -48,98 +48,34 @@ ul {
 section {
   padding-block: 10rem;
 }
-/*================= HOME ===================*/
-#home {
-  padding-top: calc(4.1rem + var(--nav-height));
+
+section header h4 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 1.6rem;
+  letter-spacing: .08rem;
+  text-transform: uppercase;
 }
 
-#home::before {
-  content: '';
-  width: 100%;
-  height: calc(108rem + var(--nav-height));
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background-color: var(--brand-green);
+section header h2 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+  color: var(--headline);
+  
 }
 
-#home img {
-  width: 26.4rem;
-  display: block;
-  margin-inline: auto;
-  object-position: 0 2rem;
-}
-
-#home h1 {
+section header h1 {
   font-size: 3.4rem;
   line-height: 130%;
   color: var(--headline);
   margin-bottom: 2.4rem;
 }
 
-#home h4 {
-  font-size: 1.4rem;
-  line-height: 150%;
-  color: var(--primary-color);
-  margin-bottom: 1.6rem;
-}
-
-#home p {
-  font-size: 1.8rem;
-  line-height: 150%;
+section .content p {
   font-weight: 400;
-  color: var(--paragraph);
-  margin-bottom: 3.2rem;
-}
-
-#home button {
-  margin-bottom: 6rem;
-  background: var(--primary-color);
-  border: none;
-  width: 26.3rem;
-  height: 5.2rem;
-  border-radius: 4rem;
-  padding: 1rem, 2rem;
-  font-size: 1.4rem;
-  color: hsl(0, 0%, 100%);
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.6rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#home .stats {
-  background: var(--brand-beige);
-  margin-inline: auto;
-  width: 32.7rem;
-  padding-block: 4rem;
-  border: var(--brand-green) 1px solid;
-  border-radius: 0.6rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 6rem;
-}
-
-#home .stat p {
-  margin: 0;
   font-size: 1.6rem;
-  color: var(--primary-color);
+  color: var(--paragraph);
   line-height: 150%;
-}
-
-#home .stat h3 {
-  font-size: 4.8rem;
-  color: var(--headline);
-  line-height: 130%;
-  margin-bottom: 0.4rem;
 }
 
 /*================= NAVIGATION ===================*/
@@ -268,21 +204,88 @@ body.menu-expanded button path {
   fill: white;
 }
 
-/*================= SERVICES ===================*/
-
-#services header h4 {
-  font-size: 1.4rem;
-  line-height: 150%;
-  letter-spacing: 0.08rem;
-  text-transform: uppercase;
-  color: var(--primary-color);
-  margin-bottom: 1.6rem;
+/*================= HOME ===================*/
+#home {
+  padding-top: calc(4.1rem + var(--nav-height));
 }
 
-#services header h2 {
-  font-size: 3rem;
-  line-height: 3.9rem;
+#home::before {
+  content: '';
+  width: 100%;
+  height: calc(108rem + var(--nav-height));
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: var(--brand-green);
+}
+
+#home img {
+  width: 26.4rem;
+  display: block;
+  margin-inline: auto;
+  object-position: 0 2rem;
+}
+
+#home p {
+  font-size: 1.8rem;
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--paragraph);
+  margin-bottom: 3.2rem;
+}
+
+#home button {
+  margin-bottom: 6rem;
+  background: var(--primary-color);
+  border: none;
+  width: 26.3rem;
+  height: 5.2rem;
+  border-radius: 4rem;
+  padding: 1rem, 2rem;
+  font-size: 1.4rem;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#home .stats {
+  background: var(--brand-beige);
+  margin-inline: auto;
+  width: 32.7rem;
+  padding-block: 4rem;
+  border: var(--brand-green) 1px solid;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6rem;
+}
+
+#home .stat p {
+  margin: 0;
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  line-height: 150%;
+}
+
+#home .stat h3 {
+  font-size: 4.8rem;
   color: var(--headline);
+  line-height: 130%;
+  margin-bottom: 0.4rem;
+}
+
+/*================= SERVICES ===================*/
+#services h2 {
   margin-bottom: 6rem;
 }
 
@@ -314,3 +317,17 @@ body.menu-expanded button path {
 }
 
 /*================= ABOUT ===================*/
+
+#about {
+  text-align: left;
+  background-color: var(--brand-beige);
+}
+
+#about header h2 {
+  margin-bottom: 2.4rem;
+}
+
+#about .content p {
+  margin-top: 2.4rem;
+  margin-bottom: 6rem;
+}
